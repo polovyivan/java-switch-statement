@@ -5,16 +5,16 @@ public class Examples {
 
     public static void main(String[] args) {
 
-//        int selectorExpression1 = 1;
-//        switch (selectorExpression1 - 1) {
-//        }
-//
-//        String selectorExpression2 = "A";
-//        switch (selectorExpression2.toUpperCase()) {
-//        }
-//
-//        switch (selectorExpression3()) {
-//        }
+        int selectorExpression1 = 1;
+        switch (selectorExpression1 - 1) {
+        }
+
+        String selectorExpression2 = "A";
+        switch (selectorExpression2.toUpperCase()) {
+        }
+
+        switch (selectorExpression3()) {
+        }
 
         int selectorExpression4 = 0;
         switch (selectorExpression4) {
@@ -104,6 +104,7 @@ public class Examples {
         }
         Day day = Day.SUNDAY;
         switch (day) {
+           // case Day.SATURDAY: // won't compile
             case SATURDAY:
             case SUNDAY:
                 System.out.println("Rest");
@@ -210,13 +211,6 @@ public class Examples {
             }
             default -> System.out.println("default: Selector is = " + selectorExpression19);
         }
-
-        switch (day) {
-            case SATURDAY -> System.out.println("Rest");
-            case FRIDAY -> System.out.println("Work");
-
-        }
-
 
     }
 
